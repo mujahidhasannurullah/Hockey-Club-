@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Club</title>
+    <!-- tailwind an daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--googole fonts manrope-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+    
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-manrope bg-white">
+    <header class="container mx-auto">
+        <div class="container mx-auto lg:p-24 px-8 items-center">
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <a class="text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#FF4240]">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+
+                    <a class="btn text-xl text-white font-bold bg-red-500 hover:bg-red-600 border-none py-2 px-6 ">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto lg:p-24 px-8">
+            <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item relative w-full rounded-2xl ">
+                    <img src="Images/1.png" alt="">
+                    <div class="absolute flex justify-between transform -translate-">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="text-center">
+                    <h3 class="text-4xl font-extrabold m-8">Professional Hockeys Club</h3>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                        <br>
+                        Purus urna in sit nullam proin.
+                    </p>
+                </div>
+
+                <hr class=" border-dashed border-gray-300 w-5/6 lg:w-2/3 m-auto lg:ml-5 ml-10">
+
+                <div class="flex flex-col  lg:flex-row  gap-8 max-w[1440px] justify-center my-1 mx-auto">
+                    <!-- progress 1 -->
+                    <div class="space-y-8 text-center">
+                        <div class="radial-progress text-3xl font-extrabold text-[#ff4240] "
+                            style="--value:87; --size:10rem; --thickness: 1rem;" role="progressbar"><span
+                                class="text-[#131318]">87%</span></div>
+                        <h2 class="text-xl font-semibold ">Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <!-- progress 2 -->
+                    <div class="space-y-8 text-center">
+                        <div class="radial-progress text-3xl font-extrabold text-[#49d293] "
+                            style="--value:87; --size:10rem; --thickness: 1rem;" role="progressbar"><span
+                                class="text-[#131318]">87%</span></div>
+                        <h2 class="text-xl font-semibold ">Experienced Coach</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <!-- progress 3 -->
+                    <div class="space-y-8 text-center">
+                        <div class="radial-progress text-3xl font-extrabold text-[#ffb546] "
+                            style="--value:87; --size:10rem; --thickness: 1rem;" role="progressbar"><span
+                                class="text-[#131318]">87%</span></div>
+                        <h2 class="text-xl font-semibold ">Senior Player</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <!-- progress 4 -->
+                    <div class="space-y-8 text-center">
+                        <div class="radial-progress text-3xl font-extrabold text-[#4c8df1] "
+                            style="--value:87; --size:10rem; --thickness: 1rem;" role="progressbar"><span
+                                class="text-[#131318]">87%</span></div>
+                        <h2 class="text-xl font-semibold ">Training Ground</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+            </section>
+    </header>
+    <main>
+        <!-- program section-->
+        <section class="my-24 mx-auto ">
+            <div class="text-center">
+                <h3 class="text-4xl font-extrabold m-8">Program Sections</h3>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                    <br>
+                    Purus urna in sit nullam proin.
+                </p>
+            </div>
+            <!-- card 1 -->
+            <div class="grid gap-4 lg:grid-cols-2 p-10 py-24 lg:py-11 flex-row-">
+                <div class="hero w-[573px] h-[338px]  rounded-2xl" style="background-image: url(Images/2.png);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-start text-neutral-content">
+                        <div class="">
+                            <h1 class="mb-5 text-2xl font-extrabold text-white">Junior Program</h1>
+                            <p class="mb-5 text-white font-medium">Dolor sit amet consectetur. Ut urna diam quis
+                                sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <button
+                                class="btn text-xl text-white font-bold bg-red-500 hover:bg-red-600 border-none py-2 px-6 ">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--card 2-->
+                <div class="hero w-[573px] h-[338px] rounded-2xl" style="background-image: url(Images/3.png);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-start text-neutral-content">
+                        <div class="">
+                            <h1 class="mb-5 text-2xl font-extrabold text-white">Junior Program</h1>
+                            <p class="mb-5 text-white font-medium">Dolor sit amet consectetur. Ut urna diam quis
+                                sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <button
+                                class="btn text-xl text-white font-bold bg-red-500 hover:bg-red-600 border-none py-2 px-6 ">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card 3-->
+                <div class="hero w-[1170px] h-[450px] rounded-2xl" style="background-image: url(Images/4.png);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-start text-neutral-content">
+                        <div class="">
+                            <h1 class="mb-5 text-2xl font-extrabold text-white">Junior Program</h1>
+                            <p class="mb-5 text-white font-medium">Dolor sit amet consectetur. Ut urna diam quis
+                                sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <button
+                                class="btn text-xl text-white font-bold bg-red-500 hover:bg-red-600 border-none py-2 px-6 ">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+           <!-- product section -->
+           <section>
+            <div class="text-center">
+              <h2 class="lg:text-4xl text-2xl font-extrabold">Our New Products</h2>
+              <p class="text-[16px] text-[#13131899] font-medium pt-3">Unveiling Innovation: Explore Our Cutting-Edge New Products Redefining Excellence.</p>
+            </div>
+            <hr class="border-dashed border-gray-300 w-5/6 lg:w-2/3 m-auto mt-5 mb-8 ">
+  
+            <div class="flex flex-col lg:flex-row my-6 flex-1 px-5 lg:px-[135px] gap-6 m-auto">
+              <div>
+                <!-- product 1 -->
+                <div class="hero bg-base-200 rounded-2xl">
+                  <div class="hero-content flex-col lg:flex-row">
+                    <img src="Images/5.png" class="w-72 h-44 object-cover rounded-lg shadow" />
+                    <div>
+                      <i class="fa-solid fa-star text-base" style="color: #FFD43B;"><span class="text-[#13131880]">&nbsp;&nbsp;5.0</span></i>&nbsp;&nbsp;&nbsp;
+  
+                      <i class="fa-regular fa-eye fa-sm text-base"><span class="text-[#13131880]">&nbsp;&nbsp;20</span></i>
+                      &nbsp; &nbsp;
+                      <i class="fa-regular fa-heart text-base"><span class="text-[#13131880]">&nbsp;&nbsp;200</span></i>
+                      <h1 class="text-xl font-bold">World Cup Jacket</h1>
+                      <p class="py-6 flex-wrap">Crafted from high-quality materials, our World Cup Jacket offers a comfortable and durable wear. The jacket is designed to withstand the excitement of the tournament, ensuring you look sharp and feel comfortable throughout the games.</p>
+  
+                      <div class=" lg:flex justify-between pr-7">
+                      <h2 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h2>
+                        <p class="text-[Delivery Fee : Free] text-sm font-medium"> <i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee : Free</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <!-- product 2 -->
+                <div class="hero bg-base-200 rounded-2xl">
+                  <div class="hero-content flex-col lg:flex-row">
+                    <img src="Images/6.png" class="w-72 h-44 object-cover rounded-lg shadow" />
+                    <div>
+                      <i class="fa-solid fa-star text-base" style="color: #FFD43B;"><span class="text-[#13131880]">&nbsp;&nbsp;5.0</span></i>&nbsp;&nbsp;&nbsp;
+  
+                      <i class="fa-regular fa-eye fa-sm text-base"><span class="text-[#13131880]">&nbsp;&nbsp;20</span></i>
+                      &nbsp; &nbsp;
+                      <i class="fa-regular fa-heart text-base"><span class="text-[#13131880]">&nbsp;&nbsp;200</span></i>
+                      <h1 class="text-xl font-bold">World Cup Flags Football</h1>
+                      <p class="py-6">Crafted from high-quality materials, our World Cup Jacket offers a comfortable and durable wear. The jacket is designed to withstand the excitement of the tournament, ensuring you look sharp and feel comfortable throughout the games.</p>
+  
+                      <div class=" lg:flex justify-between pr-7">
+                        <h2 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h2>
+                          <p class="text-[Delivery Fee : Free] text-sm font-medium"> <i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee : Free</p>
+                        </div>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- product 2nd col -->
+            <div class="flex flex-col lg:flex-row flex-1 my-6 lg:px-[135px] gap-6 px-5  m-auto">
+              <div>
+                <!-- product 3 -->
+                <div class="hero bg-base-200 rounded-2xl">
+                  <div class="hero-content flex-col lg:flex-row">
+                    <img src="Images/7.png" class="w-72 h-44 object-cover rounded-lg shadow" />
+                    <div>
+                      <i class="fa-solid fa-star text-base" style="color: #FFD43B;"><span class="text-[#13131880]">&nbsp;&nbsp;5.0</span></i>&nbsp;&nbsp;&nbsp;
+  
+                      <i class="fa-regular fa-eye fa-sm text-base"><span class="text-[#13131880]">&nbsp;&nbsp;20</span></i>
+                      &nbsp; &nbsp;
+                      <i class="fa-regular fa-heart text-base"><span class="text-[#13131880]">&nbsp;&nbsp;200</span></i>
+                      <h1 class="text-xl font-bold">Cap For Hockeys</h1>
+                      <p class="py-6 flex-wrap">Crafted from high-quality materials, our World Cup Jacket offers a comfortable and durable wear. The jacket is designed to withstand the excitement of the tournament, ensuring you look sharp and feel comfortable throughout the games.</p>
+  
+                      <div class=" lg:flex justify-between pr-7">
+                        <h2 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h2>
+                          <p class="text-[Delivery Fee : Free] text-sm font-medium"> <i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee : Free</p>
+                        </div>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <!-- product 4 -->
+                <div class="hero bg-base-200 rounded-2xl">
+                  <div class="hero-content flex-col lg:flex-row">
+                    <img src="Images/8.png" class="w-72 h-44 object-cover rounded-lg shadow" />
+                    <div>
+                      <i class="fa-solid fa-star text-base" style="color: #FFD43B;"><span class="text-[#13131880]">&nbsp;&nbsp;5.0</span></i>&nbsp;&nbsp;&nbsp;
+  
+                      <i class="fa-regular fa-eye fa-sm text-base"><span class="text-[#13131880]">&nbsp;&nbsp;20</span></i>
+                      &nbsp; &nbsp;
+                      <i class="fa-regular fa-heart text-base"><span class="text-[#13131880]">&nbsp;&nbsp;200</span></i>
+                      <h1 class="text-xl font-bold">World Cup Flags Jersey</h1>
+                      <p class="py-6">Crafted from high-quality materials, our World Cup Jacket offers a comfortable and durable wear. The jacket is designed to withstand the excitement of the tournament, ensuring you look sharp and feel comfortable throughout the games.</p>
+  
+                      <div class=" lg:flex justify-between pr-7">
+                        <h2 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h2>
+                          <p class="text-[Delivery Fee : Free] text-sm font-medium"> <i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee : Free</p>
+                        </div>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- product col 3 -->
+                      <!-- product 2nd col -->
+                      <div class="flex flex-col lg:flex-row mt- flex-1 lg:px-[135px] my-6 px-5 gap-6 m-auto">
+                        <div>
+                          <!-- product 5 -->
+                          <div class="hero bg-base-200 rounded-2xl">
+                            <div class="hero-content flex-col lg:flex-row">
+                              <img src="Images/9.png" class="w-72 h-44 object-cover rounded-lg shadow" />
+                              <div>
+                                <i class="fa-solid fa-star text-base" style="color: #FFD43B;"><span class="text-[#13131880]">&nbsp;&nbsp;5.0</span></i>&nbsp;&nbsp;&nbsp;
+            
+                                <i class="fa-regular fa-eye fa-sm text-base"><span class="text-[#13131880]">&nbsp;&nbsp;20</span></i>
+                                &nbsp; &nbsp;
+                                <i class="fa-regular fa-heart text-base"><span class="text-[#13131880]">&nbsp;&nbsp;200</span></i>
+                                <h1 class="text-xl font-bold">Cap For Cricket</h1>
+                                <p class="py-6 flex-wrap">Crafted from high-quality materials, our World Cup Jacket offers a comfortable and durable wear. The jacket is designed to withstand the excitement of the tournament, ensuring you look sharp and feel comfortable throughout the games.</p>
+  
+                                <div class=" lg:flex justify-between pr-7">
+                                  <h2 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h2>
+                                    <p class="text-[Delivery Fee : Free] text-sm font-medium"> <i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee : Free</p>
+                                  </div>
+            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <!-- product 6 -->
+                          <div class="hero bg-base-200 rounded-2xl ">
+                            <div class="hero-content flex-col lg:flex-row">
+                              <img src="Images/10.png" class="w-72 h-44 object-cover rounded-lg shadow" />
+                              <div>
+                                <i class="fa-solid fa-star text-base" style="color: #FFD43B;"><span class="text-[#13131880]">&nbsp;&nbsp;5.0</span></i>&nbsp;&nbsp;&nbsp;
+            
+                                <i class="fa-regular fa-eye fa-sm text-base"><span class="text-[#13131880]">&nbsp;&nbsp;20</span></i>
+                                &nbsp; &nbsp;
+                                <i class="fa-regular fa-heart text-base"><span class="text-[#13131880]">&nbsp;&nbsp;200</span></i>
+                                <h1 class="text-xl font-bold">World Cup Flags Football</h1>
+                                <p class="py-6">Crafted from high-quality materials, our World Cup Jacket offers a comfortable and durable wear. The jacket is designed to withstand the excitement of the tournament, ensuring you look sharp and feel comfortable throughout the games.</p>
+  
+                                <div class=" lg:flex justify-between pr-7">
+                                  <h2 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h2>
+                                    <p class="text-[Delivery Fee : Free] text-sm font-medium"> <i class="fa-solid fa-cart-shopping pr-2"></i>Delivery Fee : Free</p>
+                                  </div>
+            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          </section>
+          <br>
+          <hr class="border-dashed border-gray-300 w-5/6 lg:w-2/3 m-auto mt-5 mb-8 ">
+  
+  
+                    <!-- get in start -->
+        <section class="manrope">
+          <div class="text-center ">
+            <h2 class="text-4xl mb-3 font-extrabold text-primary-col">
+              Get In Touch
+            </h2>
+            <p class="font-medium text-dark-col mb-6 md:px-20 lg:px-64">
+              Join With Us : Embark on a Journey of Opportunities and Growth. <br> At Hockey’s, we invite individuals who are passionate, innovative, and driven to join our dynamic team.
+            </p>
+            <hr class="border-dashed border-gray-300 w-3/4  m-auto mt-7 mb-8 ">
+          </div>
+          <div class="flex flex-col gap-5 lg:flex-row shadow-2xl rounded-3xl p-3 lg:mx-32">
+            <div class="border p-3 rounded-2xl">
+              <div
+                class="w-[100%] mb-4 mr-0 h-[170px] rounded-2xl bg-[#BCED6D1A]"
+              >
+                <i
+                  class="fa-solid fa-phone text-green-500 text-4xl mb-6 mt-4 mx-6"
+                ></i>
+                <p class="ml-4">
+                  <span class="text-white-col"> Phone Number :</span> <br />
+                  <span class="font-extrabold">(+62) 123-321-543</span>
+                </p>
+              </div>
+              <div
+                class="w-[100%] mb-4 mr-0 md:mr-72 h-[170px] rounded-2xl bg-[#FDDD5F1A]"
+              >
+                <i
+                  class="fa-regular fa-envelope text-yellow-500 text-4xl mb-6 mt-4 mx-6"
+                ></i>
+                <p class="ml-4">
+                  <span class="text-white-col"> Email:</span> <br />
+                  <span class="font-extrabold">hockeys@support.com</span>
+                </p>
+              </div>
+              <div
+                class="w-[100%] mb-14 mr-0 h-[170px] rounded-2xl bg-[#629CF31A]"
+              >
+                <i
+                  class="fa-solid fa-location-dot text-[#28A265,#28895E] text-4xl mb-6 mt-4 mx-6"
+                ></i>
+                <p class="ml-4">
+                  <span class="text-white-col"> Location :</span> <br />
+                  <span class="font-extrabold">152/1 Mohakhali Wireless Gate</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex-1  p-3 rounded-2xl">
+              <div class="flex flex-col lg:mx-0 lg:flex-row gap-2 lg:gap-3">
+                <div class="item1 flex-1 mx-4 md:mx-0">
+                  <label class="block font-bold my-2 text-xl" for="name"
+                    >Your Name</label
+                  >
+                  <input
+                    placeholder="Enter your full name"
+                    class="input input-bordered border-none text-black bg-[#13131808] w-full"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                  <label class="block font-bold my-2 text-xl" for="name">
+                    Your Email</label
+                  >
+                  <input
+                    placeholder="Enter your email"
+                    class="input input-bordered border-none text-black bg-[#13131808] w-full"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                <div class="item2 flex-1 mx-4 md:mx-0">
+                  <label class="block font-bold my-2 text-xl" for="name"
+                    >Subject</label
+                  >
+                  <input
+                    placeholder="Enter your subject"
+                    class="input input-bordered border-none text-black bg-[#13131808] w-full"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                  <label class="block font-bold my-2 text-xl" for="name"
+                    >Phone Number</label>
+                  <input
+                    placeholder="Enter your phone number"
+                    class="input input-bordered border-none text-black bg-[#13131808] w-full"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+              </div>
+              <div class="item3 mt-2 mx-2">
+                <label class="block font-bold my-2 text-xl" for="name"
+                  >Message</label
+                >
+                <textarea
+                  class="w-full my-2 p-4 rounded-xl bg-[#13131808] text-black"
+                  name=""
+                  id=""
+                  cols="30"
+                  placeholder="Write your message"
+                  rows="11"
+                >
+                </textarea>
+              </div>
+              <div class="item4 mt-3">
+                <button
+                  class="btn bg-[#FF4240] text-white ml-0 md:ml-2 w-[98%]"
+                  type="button"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- icons Social Media  -->
+        <section class="my-12 bg-[#13131808] rounded-2xl m-5 lg:mx-36">
+          <div class="text-center">
+            <h2 class="text-2xl font-extrabold pt-10 text-primary-col">
+              Social Media
+            </h2>
+            <div class="text-2xl ">
+              <i class="fa-brands fa-twitter"></i>
+  
+              <i
+                class="mt-3 mb-10 cursor-pointer mx-2 fa-brands fa-instagram"
+              ></i>
+  
+              <i class="mt-3 mb-10 cursor-pointer mx-2 fa-brands fa-facebook"></i>
+              
+              <i class="mt-3 mb-10 cursor-pointer mx-2 fa-brands fa-github"></i>
+            </div>
+          </div>
+        </section>
+      </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
